@@ -9,6 +9,7 @@
 /dist
 /tags
 *.mo
+.sass-cache/*
 
 # IDE and editor specific files #
 #################################
