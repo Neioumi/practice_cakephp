@@ -1,5 +1,25 @@
 # CakePHPの練習
 2.6.4安定版をコピーして、ひとまずチュートリアル的な何かを作ってみる。
+## 手順メモ
+1. CakePHPを落とす。
+2. ローカル環境でひとまずそのまま動かしてみる（今回はMAMPで）。
+3. Security.saltとSecurity.cipherSeedのエラーを解消する（APP/Config/core.phpの該当箇所に生成ツールを使ってそれぞれコピペ）。
+4. tempディレクトリが書き込みできないというエラーがあれば、権限を設定する。
+5. DBに接続する。
+		0. MAMPのMySQLをコマンドラインで使いやすいように、MAMPのコマンド群にパスを通しておく。
+		1. ターミナルでmysqlコマンドでデータベースを作って、ユーザとパスワードを設定。
+			$ mysql -u root -p
+			mysql> create database database_name;
+			mysql> grant all on database_name.* to userid@localhost identified by 'password';
+		2. /app/Config/database.php.default を複製して、database.phpにリネーム。上で設定したDB名、ユーザー、パスワードに設定する。
+		3. ブラウザで確認すると、CakePHPはDBに接続できるというメッセージに変わっているはず。
+6. MySQLでテーブルを作成。
+7. ModelにPost.phpを作成。
+8. Controllerに、対応するPostsController.phpを作る。
+9. View/Posts/にindex.ctpを作る。
+10. Controlloerに機能を追加、その機能に対応するテンプレートをViewにそれぞれ作っていく。
+
+
 
 # CakePHP
 
