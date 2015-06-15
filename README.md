@@ -1,3 +1,6 @@
+# CakePHPの練習
+2.6.4安定版をコピーして、ひとまずチュートリアル的な何かを作ってみる。
+
 # CakePHP
 
 [![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
