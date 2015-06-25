@@ -1,4 +1,9 @@
-<h1>Blog Posts</h1>
+<?php
+$this->Html->meta('keywords', 'キーワード1,キーワード2', array('inline' => false));
+$this->Html->meta('description', 'ディスクリプション', array('inline' => false));
+ ?>
+
+ <h1>Blog Posts</h1>
 
 <table>
 	<tr>

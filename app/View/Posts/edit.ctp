@@ -1,3 +1,8 @@
+<?php
+$this->Html->meta('keywords', 'キーワード1,キーワード2', array('inline' => false));
+$this->Html->meta('description', 'ディスクリプション', array('inline' => false));
+ ?>
+
 <h1>Edit Post</h1>
 
 <?php 

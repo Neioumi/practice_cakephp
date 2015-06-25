@@ -144,6 +144,12 @@ endif;
 	?>
 </p>
 
+<!-- カスタマイズ Start -->
+<?php
+$this->Html->meta('keywords', 'キーワード1,キーワード2', array('inline' => false));
+$this->Html->meta('description', 'ディスクリプション', array('inline' => false));
+ ?>
+
 <h3>一覧ページへ</h3>
 <p>
 	<ul>
@@ -168,6 +174,9 @@ endif;
 </p>
 
 <hr>
+
+<!-- カスタマイズ End -->
+
 
 <h3><?php echo __d('cake_dev', 'Editing this Page'); ?></h3>
 <p>
