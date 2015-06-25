@@ -144,6 +144,31 @@ endif;
 	?>
 </p>
 
+<h3>一覧ページへ</h3>
+<p>
+	<ul>
+		<li>
+			<?php echo $this->Html->link (
+				'リスト',
+				array('controller' => 'posts', 'action' => 'index')
+				);
+			 ?>
+		</li>
+		<li>
+			<!-- 静的ページへも同様にリンクを張れる -->
+			<?php echo $this->Html->link(
+				'このサイトについて',
+				array('controller'=>'pages',
+					'action'=>'about')
+				);
+			?>
+		</li>
+	</ul>
+	
+</p>
+
+<hr>
+
 <h3><?php echo __d('cake_dev', 'Editing this Page'); ?></h3>
 <p>
 <?php
