@@ -155,8 +155,22 @@ $this->Html->meta('description', 'ディスクリプション', array('inline' =
 	<ul>
 		<li>
 			<?php echo $this->Html->link (
-				'リスト',
+				'記事一覧',
 				array('controller' => 'posts', 'action' => 'index')
+				);
+			 ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link (
+				'ユーザー情報',
+				array('controller' => 'users', 'action' => 'index')
+				);
+			 ?>
+		</li>
+		<li>
+			<?php echo $this->Html->link (
+				'ログアウト',
+				array('controller' => 'users', 'action' => 'logout')
 				);
 			 ?>
 		</li>
